@@ -2,12 +2,9 @@
 
 
 
-
-
-User-agent: Googlebot
-allow: /nogooglebot/
+User-agent: Unnecessarybot
+Disallow: /
 
 User-agent: *
-Allow: /
 
 Sitemap: http://www.mastersecurity.md/sitemap.xml
