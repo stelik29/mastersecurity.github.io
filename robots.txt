@@ -1,7 +1,4 @@
-#Incorrect:
-User-agent: Yandex
-Disallow: /корзина
-Sitemap: сайт.рф/sitemap.xml
+
 
 #Correct:
 User-agent: Yandex
