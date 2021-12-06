@@ -1,10 +1,19 @@
 
+$ git clone https://github.com/google/robotstxt.git robotstxt
+Cloning into 'robotstxt'...
+...
+$ cd robotstxt/
+bazel-robots$ bazel test :robots_test
+...
+/:robots_test                                                      PASSED in 0.1s
 
+Executed 1 out of 1 test: 1 test passes.
+...
+bazel-robots$ bazel build :robots_main
+...
+Target //:robots_main up-to-date:
+  bazel-bin/robots_main
+...
+bazel-robots$ bazel run robots_main -- ~/local/path/to/robots.txt YourBot https://mastersecurity.md/index.html
+  user-agent 'YourBot' with url 'https://mastersecurity.md/index.html' allowed: YES
 
-
-User-agent: Unnecessarybot
-Disallow: /
-
-User-agent: *
-
-Sitemap: http://www.mastersecurity.md/sitemap.xml
