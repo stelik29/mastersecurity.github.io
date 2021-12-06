@@ -5,7 +5,7 @@
 
 
 User-agent: Googlebot
-Disallow: /nogooglebot/
+allow: /nogooglebot/
 
 User-agent: *
 Allow: /
