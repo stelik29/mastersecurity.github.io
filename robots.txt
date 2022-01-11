@@ -1,4 +1,4 @@
-Allow: /index.html
+
 Allow: /https://mastersecurity.md
 Allow: /*.css
 Allow: /*.woff
