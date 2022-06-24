@@ -1,27 +1,4 @@
+User-agent: *
+Disallow:
 
-Disallow: /https://mastersecurity.md
-Disallow: /*.index.html
-Disallow: /*.css
-Disallow: /*.woff
-Disallow: /*.jpg
-Disallow: /*.gif
-Disallow: /*.png
-Disallow: /*.webp
-Disallow: /*.svg
-Disallow: /*.js
-Disallow: /*.css
-Disallow: /*.woff
-Disallow: /*.jpg
-Disallow: /*.gif
-Disallow: /*.png
-Disallow: /*.webp
-Disallow: /*.svg
-Disallow: /*.js
-Disallow: /*.css
-Disallow: /*.woff
-Disallow: /*.jpg
-Disallow: /*.gif
-Disallow: /*.png
-Disallow: /*.webp
-Allow: /*.svg
-Sitemap: https://mastersecurity.md/sitemap.xml
+Sitemap: https://mastersecurity/sitemap_index.
