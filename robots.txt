@@ -1,12 +1,15 @@
 
-
-
+User-agent: Googlebot
+Disallow: / blocks the entire site.
 
 
 User-agent: NerdyBot
 Disallow: /
+Disallow: / blocks the entire site.
 
 User-agent: *
+Disallow: / blocks the entire site.
+Disallow: /bad-directory/
 Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
@@ -19,3 +22,4 @@ Disallow: /servicii-intercom-smart-door-bell-instalare-in-chisinau.html
 Disallow: /servicii-sisteme-anti-incendiu-in-chisinau.html
 Disallow: /servicii-sisteme-de-alarma-in-chisinau.html
 Disallow: /servicii-supraveghere-video-in-moldova.html
+Disallow: /secret.html
