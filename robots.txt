@@ -11,6 +11,9 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
 Disallow: /fontawesome/
+Disallow: /jpeg/
+Disallow: /png/
+Disallow: /webp/
 
 
 
@@ -19,6 +22,9 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
 Disallow: /fontawesome/
+Disallow: /jpeg/
+Disallow: /png/
+Disallow: /webp/
 
 
 
@@ -27,3 +33,6 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
 Disallow: /fontawesome/
+Disallow: /jpeg/
+Disallow: /png/
+Disallow: /webp/
