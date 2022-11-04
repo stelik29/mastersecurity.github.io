@@ -1,0 +1,13 @@
+
+
+Sitemap: https://mastersecurity.md/sitemap.xml
+
+
+User-agent: NerdyBot
+Disallow: /
+
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /fonts/
+Disallow: /fontawesome/
