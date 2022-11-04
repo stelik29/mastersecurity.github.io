@@ -14,7 +14,15 @@ Disallow: /fontawesome/
 
 
 
-User-agent: g
+User-agent: google
+Disallow: /css/
+Disallow: /js/
+Disallow: /fonts/
+Disallow: /fontawesome/
+
+
+
+User-agent: yandex
 Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
