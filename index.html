@@ -865,7 +865,33 @@ Acum, cu ajutorul notificărilor pe care le primesc pe telefon, pot fi mereu la 
 		
 		
 		
+			
+<!-- shop script starts here  -->	
 		
+<script>
+        function showPopup(title, description, price) {
+            const popupOverlay = document.getElementById('popupOverlay');
+            const popupContent = document.getElementById('popupContent');
+            const popupTitle = document.getElementById('popupTitle');
+            const popupDescription = document.getElementById('popupDescription');
+            const popupPrice = document.getElementById('popupPrice');
+            const popupImage = document.getElementById('popupImage');
+
+            popupTitle.textContent = title;
+            popupDescription.textContent = description;
+            popupPrice.textContent = price;
+            popupImage.src = `product_images/${title.toLowerCase().replace(/\s+/g, '-')}.jpg`;
+
+            popupOverlay.style.display = 'flex';
+        }
+
+        function closePopup() {
+            const popupOverlay = document.getElementById('popupOverlay');
+            popupOverlay.style.display = 'none';
+        }
+    </script>
+		
+<!-- shop script ends here  -->
 		
 		
 		
