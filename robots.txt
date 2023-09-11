@@ -4,7 +4,7 @@ Sitemap: https://mastersecurity.md/sitemap.xml
 
 
 User-agent: NerdyBot
-Disallow: /
+allow: index.html
 
 User-agent: *
 Disallow: /css/
