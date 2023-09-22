@@ -30,54 +30,42 @@
     </head>
 	
 	
-	<!-- shop style starts here  -->
+	<!-- blog text style starts here  -->
 	
-        <style>
-        /* Styling for product container */
-        .product-container {
+       <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Background color for the entire page */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the frame horizontally and vertically */
+        .frame-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around; /* Center products horizontally */
-            gap: 20px; /* Adjust the gap between products */
-            padding: 20px; /* Add space around the products */
-        }
-
-        /* Styling for product items */
-        .product-item {
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid #ddd; /* Add a border for each product item */
-            padding: 10px;
-            max-width: 250px; /* Limit the width of each product */
-        }
-
-        /* Styling for the popup overlay */
-        .popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
             justify-content: center;
             align-items: center;
+            min-height: 100vh; /* Ensure the frame takes up at least the full viewport height */
         }
 
-    /* Styling for the popup content */
-.popup-content {
-    background: white;
-    padding: 20px;
-    max-width: 80%;
-    text-align: center;
-    border-radius: 5px;
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-    max-height: 80vh; /* Limit the maximum height of the popup content */
-}
+        /* Customize the frame's appearance */
+        .frame {
+            padding: 20px;
+            border: 2px solid #333; /* Border color */
+            background-color: #fff; /* Background color of the frame */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            max-width: 80%; /* Limit the frame's width */
+            text-align: center;
+        }
+
+        /* Style for the text inside the frame */
+        .frame-content {
+            font-size: 18px;
+            color: #333; /* Text color */
+        }
     </style>
 	
-	
-	<!-- shop style ends here  -->
+	<!-- blog text style ends here  -->
 	
 	
 	
@@ -250,7 +238,9 @@
 
 
 
-
+ <div class="frame-container">
+        <div class="frame">
+            <p class="frame-content">
 
 
 
@@ -284,7 +274,8 @@ Asigură-te că iei în considerare aspectele de securitate atunci când deschiz
 
       
 
-
+     </div>
+    </div>
 
 
 		
