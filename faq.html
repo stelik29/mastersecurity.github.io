@@ -32,7 +32,7 @@
 	
 	<!-- blog text style starts here  -->
 	
-       <style>
+     <style>
         body {
             margin: 0;
             padding: 0;
@@ -40,28 +40,37 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Center the frame horizontally and vertically */
-        .frame-container {
+        /* Create a container for the three columns */
+        .column-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Ensure the frame takes up at least the full viewport height */
+            justify-content: space-between;
+            padding: 20px;
         }
 
-        /* Customize the frame's appearance */
-        .frame {
+        /* Style each column */
+        .column {
+            flex-basis: 30%; /* Set the width of each column */
+            background-color: #fff; /* Background color of the columns */
             padding: 20px;
             border: 2px solid #333; /* Border color */
-            background-color: #fff; /* Background color of the frame */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-            max-width: 80%; /* Limit the frame's width */
-            text-align: center;
         }
 
-        /* Style for the text inside the frame */
-        .frame-content {
-            font-size: 18px;
+        /* Style the text and links inside each column */
+        .column-content {
+            font-size: 16px;
             color: #333; /* Text color */
+        }
+
+        /* Style the links */
+        .column-content a {
+            text-decoration: none;
+            color: #0078d4; /* Link color */
+        }
+
+        /* Add hover effect to links */
+        .column-content a:hover {
+            text-decoration: underline;
         }
     </style>
 	
@@ -233,16 +242,31 @@
 			<!-- breadcrumb-area-end -->
 			
 
+ <div class="column-container">
+        <div class="column">
+            <div class="column-content">
+                <h2>Column 1</h2>
+                <p>This is some text for column 1. You can add <a href="#">links</a> to other pages here.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-content">
+                <h2>Column 2</h2>
+                <p><li><a href="camera-ip-port-router.html"> Configurare port pentru camera IP</a></li></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-content">
+                <h2>Column 3</h2>
+                <p>This is some text for column 3. You can add <a href="#">links</a> to other pages here.</p>
+            </div>
+        </div>
+    </div>
 
 
 
 
-
- <div class="frame-container">
-        <div class="frame">
-            <p class="frame-content">
-
-  <li><a href="camera-ip-port-router.html"> Configurare port pentru camera IP</a></li>
+  
 
 
 
