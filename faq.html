@@ -32,7 +32,7 @@
 	
 	<!-- blog text style starts here  -->
 	
-     <style>
+      <style>
         body {
             margin: 0;
             padding: 0;
@@ -43,13 +43,15 @@
         /* Create a container for the three columns */
         .column-container {
             display: flex;
+            flex-wrap: wrap; /* Enable wrapping for smaller screens */
             justify-content: space-between;
             padding: 20px;
         }
 
         /* Style each column */
         .column {
-            flex-basis: 30%; /* Set the width of each column */
+            flex-basis: calc(33.33% - 20px); /* Set the width of each column for desktop */
+            margin-bottom: 20px; /* Add margin between columns */
             background-color: #fff; /* Background color of the columns */
             padding: 20px;
             border: 2px solid #333; /* Border color */
@@ -71,6 +73,13 @@
         /* Add hover effect to links */
         .column-content a:hover {
             text-decoration: underline;
+        }
+
+        /* Media query for mobile screens */
+        @media screen and (max-width: 768px) {
+            .column {
+                flex-basis: 100%; /* Full width for mobile */
+            }
         }
     </style>
 	
