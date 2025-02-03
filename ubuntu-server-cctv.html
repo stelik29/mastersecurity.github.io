@@ -1,20 +1,55 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-   
-   <head>
-	
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
 
-	
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Ghid de instalare camere video</title>
-        <meta name="keywords" content="vinzari camere video in moldova, vinzari camere video in chisinau , camere video in chisinau, instalare camere video in moldova, montare camere video in moldova"/>
-	<meta name="google-site-verification" content="TDrLgFrm-KQHfIL8KzVKmje9ZDEsGauOAOmWvOAOg0s" />
-        <meta name="description" content="Instalare camere video in chisinau galerie">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
+  <title>Configurare Ubuntu Server pentru Camere video</title>
+  <meta name="description" content="Ghid complet pentru configurarea unui server Ubuntu pentru stocarea video-urilor de la camere CCTV la distanță" />
+  <meta name="keywords" content="configurare server ubuntu, instalare ubuntu server, ghid ubuntu server, setup server ubuntu, server pentru camere cctv, stocare video cctv, server linux ubuntu pentru supraveghere video" />
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
+  <meta name="google-site-verification" content="TDrLgFrm-KQHfIL8KzVKmje9ZDEsGauOAOmWvOAOg0s" />  
+  <meta property="og:locale" content="ro_MD" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Configurare Ubuntu Server pentru Camere CCTV" />
+  <meta property="og:description" content="Ghid complet pentru configurarea unui server Ubuntu pentru stocarea video-urilor de la camere CCTV la distanță." />
+  <meta property="og:url" content="https://mastersecurity.md/ubuntu-server-setup" />
+  <meta property="og:site_name" content="MasterSecurity" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Configurare Ubuntu Server pentru Camere CCTV" />
+  <meta name="twitter:description" content="Tutorial complet pentru instalarea si configurarea unui server Ubuntu dedicat stocării video-urilor de la camere CCTV." />
+  <meta name="twitter:label1" content="Written by" />
+  <meta name="twitter:data1" content="admin" />
+  <meta name="twitter:label2" content="Time to read" />
+  <meta name="twitter:data2" content="5 minutes" />
+
+  <script type='application/ld+json'> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "WebPage",
+    "name": "Configurare Ubuntu Server pentru Camere CCTV",
+    "url": "https://mastersecurity.md/ubuntu-server-setup",
+    "description": "Un ghid detaliat pentru configurarea unui server Ubuntu pentru stocarea video-urilor de la camere CCTV, incluzând instalarea pachetelor necesare și configurarea rețelei.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MasterSecurity",
+      "url": "https://mastersecurity.md"
+    },
+    "mainEntityOfPage": "https://mastersecurity.md/ubuntu-server-cctv.html"
+  }
+  </script>
+	   
+	   
+	   
+	
+	   
+	   
+	   
+	   
+	   
 		<!-- CSS here -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.min.css">
@@ -27,8 +62,6 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
-
-
 
 
 
@@ -72,15 +105,13 @@
 
 
 
-
-
 	   
     </head>
 	
 	
-	<!-- blog text style starts here  -->
 	
-      <style>
+	
+       <style>
         body {
             margin: 0;
             padding: 0;
@@ -88,46 +119,28 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Create a container for the three columns */
-        .column-container {
+        /* Center the frame horizontally and vertically */
+        .frame-container {
             display: flex;
-            flex-wrap: wrap; /* Enable wrapping for smaller screens */
-            justify-content: space-between;
-            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure the frame takes up at least the full viewport height */
         }
 
-        /* Style each column */
-        .column {
-            flex-basis: calc(33.33% - 20px); /* Set the width of each column for desktop */
-            margin-bottom: 20px; /* Add margin between columns */
-            background-color: #fff; /* Background color of the columns */
+        /* Customize the frame's appearance */
+        .frame {
             padding: 20px;
             border: 2px solid #333; /* Border color */
+            background-color: #fff; /* Background color of the frame */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            max-width: 80%; /* Limit the frame's width */
+            text-align: center;
         }
 
-        /* Style the text and links inside each column */
-        .column-content {
-            font-size: 16px;
+        /* Style for the text inside the frame */
+        .frame-content {
+            font-size: 18px;
             color: #333; /* Text color */
-        }
-
-        /* Style the links */
-        .column-content a {
-            text-decoration: none;
-            color: #0078d4; /* Link color */
-        }
-
-        /* Add hover effect to links */
-        .column-content a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media query for mobile screens */
-        @media screen and (max-width: 768px) {
-            .column {
-                flex-basis: 100%; /* Full width for mobile */
-            }
         }
     </style>
 	
@@ -214,13 +227,20 @@
 											<li class="has-sub"> 
                                                 <a href="contact.html">Contact</a>
                                                 
-                                            </li>                     
+                                                </li>                     
                                         </ul>
                                     </nav>
                                 </div>
                             </div>   
                             <div class="col-xl-3 col-lg-3 text-right d-none d-lg-block mt-15 mb-15">
-                              <div class="header-social text-right"><span> <a href="#" title="Facebook"><em class="fab fa-facebook-f"></em></a> <a href="#" title="Twitter"><em class="fab fa-twitter"></em></a>&nbsp;</span><!--  /social media icon redux -->                                 
+                             
+ <ul class="social-icons">
+	<li class="viber"><a href="viber://contact?number=%2B37369070702"><i class="fab fa-viber fa-xs" style="color: #665CAC;"></i></a></li>	
+        <li class="whatsapp"><a href="https://wa.me/+37369070702"><i class="fab fa-whatsapp fa-xs" style="color: #25D366;"></i></a></li>
+        <li class="facebook"><a href="#"><i class="fab fa-facebook fa-xs" style="color: #1877F2;"></i></a></li>
+ 
+        
+    </ul>                             
                                             </div>
                             </div>
                           
@@ -266,13 +286,15 @@
                         <div class="col-xl-12 col-lg-12">
                             <div class="breadcrumb-wrap text-left">
                                 <div class="breadcrumb-title">
-                                  <h2>Intrebari frecvente</h2>
+                                  <h2>Configurare Ubuntu Server pentru Camere video</h2>
                                   <div class="breadcrumb-wrap">
                               
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Acasa</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Configurare Ubuntu Server pentru Camere video</li>
+                                      
                                     </ol>
                                 </nav>
                             </div>
@@ -299,47 +321,108 @@
 			<!-- breadcrumb-area-end -->
 			
 
- <div class="column-container">
-        <div class="column">
-            <div class="column-content">
-                <h2>Accordion 1&nbsp;</h2>
-                <p>text</p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="column-content">
-                <h2>Accordion 2</h2>
-                <p><li><a href="camera-ip-port-router.html"> under construction</a><br>
-<br>
-					
-</li></p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="column-content">
-                <h2>Accordion 3</h2>
-                <p>text&nbsp;</p>
-            </div>
-        </div>
-    </div>
+
+ <br>   <br>
 
 
 
 
-  
+ <div class="frame-container">
+        <div class="frame">
+            <p class="frame-content">
 
 
+    <h1>Cum să configurezi un panou de control pe un server Ubuntu pentru stocarea la distanță a înregistrărilor CCTV</h1>
+    
+    <p>Dacă cauți o metodă de a stoca la distanță înregistrările CCTV, un server Ubuntu poate oferi o soluție sigură și eficientă. În acest ghid, îți vom arăta pașii necesari pentru a configura un server Ubuntu, a instala un panou de control și a-l configura pentru a stoca înregistrările CCTV la distanță.</p>
+    
+    <h2>De ce să folosești Ubuntu pentru stocarea înregistrărilor CCTV?</h2>
+    <p>Ubuntu este un sistem de operare stabil și open-source, ideal pentru configurarea serverelor. Costul său redus, caracteristicile de securitate și suportul comunității îl fac o alegere populară pentru entuziaștii și profesioniștii în tehnologie. Configurarea unui server dedicat cu Ubuntu pentru înregistrarea CCTV este o soluție practică pentru stocarea și gestionarea de la distanță.</p>
+    
+    <h2>Ce vei avea nevoie:</h2>
+    <ul>
+      <li>Un server Ubuntu (poți instala Ubuntu Server pe o mașină fizică sau virtuală)</li>
+      <li>Acces SSH la serverul tău Ubuntu</li>
+      <li>Un sistem de camere CCTV (cu adresă IP sau capacități de stocare locală)</li>
+      <li>O conexiune la internet fiabilă (pentru stocare la distanță)</li>
+    </ul>
+    
+    <h2>Pasul 1: Instalează Ubuntu Server</h2>
+    <p>Descarcă cea mai recentă imagine ISO a Ubuntu Server de pe site-ul oficial.</p>
+    <ul>
+      <li>Crează un stick USB bootabil sau configurează o mașină virtuală pentru a instala Ubuntu.</li>
+      <li>Urmărește instrucțiunile de pe ecran pentru a instala Ubuntu Server. Alege instalarea minimă pentru o performanță mai bună.</li>
+    </ul>
+    
+    <h2>Pasul 2: Configurarea accesului SSH</h2>
+    <p>SSH este esențial pentru a gestiona serverul tău de la distanță. Pentru a-l activa, rulează următoarea comandă:</p>
+    <code>
+      sudo apt update<br>
+      sudo apt install openssh-server
+    </code>
+    <p>Odată ce SSH este instalat, verifică statusul:</p>
+    <code>
+      sudo systemctl status ssh
+    </code>
+    <p>Conectează-te la serverul tău prin SSH de pe o altă mașină folosind:</p>
+    <code>
+      ssh username@server-ip
+    </code>
+    
+    <h2>Pasul 3: Instalează un panou de control (Opțional)</h2>
+    <p>Deși poți gestiona serverul prin linia de comandă, un panou de control poate face gestionarea înregistrărilor CCTV mai ușoară. Opțiuni populare includ:</p>
+    <ul>
+      <li><strong>Webmin:</strong> O interfață web pentru gestionarea sistemelor Unix.</li>
+      <li><strong>Ajenti:</strong> O opțiune ușoară și prietenoasă pentru controlul serverelor Ubuntu.</li>
+    </ul>
+    
+    <p>Pentru a instala Webmin, rulează următoarele comenzi:</p>
+    <code>
+      sudo apt install wget<br>
+      wget http://prdownloads.sourceforge.net/webadmin/webmin_1.980_all.deb<br>
+      sudo dpkg --install webmin_1.980_all.deb<br>
+      sudo apt --fix-broken install
+    </code>
+    <p>Accesează Webmin prin browser-ul tău la <strong>http://server-ip:10000</strong>.</p>
+    
+    <h2>Pasul 4: Configurarea stocării la distanță pentru înregistrările CCTV</h2>
+    <p>Pentru a configura stocarea la distanță pentru înregistrările CCTV, urmează acești pași:</p>
+    <ul>
+      <li><strong>Partaje NFS sau Samba:</strong> Creează un dosar partajat pe serverul tău Ubuntu unde pot fi stocate înregistrările CCTV.</li>
+      <li><strong>Configurează sistemul CCTV:</strong> Pe sistemul tău CCTV, configurează-l pentru a stoca înregistrările la distanță, indicând dosarul partajat de pe serverul Ubuntu.</li>
+      <li><strong>Asigură suficient spațiu pe disc:</strong> Înregistrările video CCTV pot ocupa mult spațiu, așa că asigură-te că serverul tău Ubuntu are suficientă capacitate de stocare. Poți lua în considerare utilizarea unui hard disk extern sau stocării în cloud pentru backup.</li>
+    </ul>
+    
+    <h2>Pasul 5: Securizează configurația</h2>
+    <p>Pentru a securiza serverul, configurează firewall-ul folosind UFW (Uncomplicated Firewall). Rulează următoarele comenzi:</p>
+    <code>
+      sudo ufw allow from trusted-ip-address to any port 22<br>
+      sudo ufw enable
+    </code>
+    <p>De asemenea, configurează backup-uri automate către o altă locație la distanță sau un serviciu cloud pentru a preveni pierderea datelor.</p>
+    
+    <h2>Concluzie</h2>
+    <p>Cu acești pași, vei avea un server Ubuntu complet funcțional configurat pentru a stoca înregistrările CCTV la distanță. Această configurație nu doar că economisește spațiu pe dispozitivele tale locale, dar asigură și că înregistrările tale sunt salvate în siguranță.</p>
+    
+    <p>Pentru mai multe sfaturi și ghiduri despre <strong>configurarea unui server Ubuntu</strong> și dezvoltare web, vizitează <a href="https://backdevelopers.com" target="_blank" class="backlink">Back Developers</a>.</p>
+  </div>
 
-
+ <div class="slider-btn mt-30 mb-160">     
+                                             
 
       
 
      </div>
+	 
+	 
+
     </div>
-
-
+			
+   <div align="center" style="margin-top: 200px;">
+        <a href="faq.html" class="btn ss-btn active mr-15">Mergi inapoi</a>
+    </div>
+ <br>   <br>  <br>   <br>
 		
-
 
 			
 		
@@ -465,7 +548,7 @@
                                             <img src="img/icon/f-email.png" alt="img"> 
                                         </div>
                                         <div class="text2">
-                                            Contact@mastersecurity.md
+                                           Contact@mastersecurity.md
                                         </div>
                                     </a>
                                </li>
