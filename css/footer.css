@@ -1,0 +1,90 @@
+/* footer.css */
+.footer-extra {
+    background: #2c3033;
+    padding: 60px 0 40px;
+    color: #fff;
+}
+
+.footer-extra h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-extra p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-extra ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-extra ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.footer-extra ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-extra ul li a:hover {
+    color: #ff4c4c;
+}
+
+.footer-extra .btn-footer {
+    background: #ff4c4c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.footer-extra .btn-footer:hover {
+    background: #e04343;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-icons li {
+    font-size: 24px;
+    margin: 0 15px 0 0;
+}
+
+.whatsapp i { color: #25D366; }
+.facebook i { color: #1877F2; }
+.viber i { color: #665CAC; }
+
+/* Responsivitate */
+@media (max-width: 767px) {
+    .footer-extra .col-md-6, .footer-extra .col-md-12 {
+        margin-bottom: 30px;
+    }
+}
