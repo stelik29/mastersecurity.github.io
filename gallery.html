@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <title>Galerie - Master Security Moldova</title>
+  <meta name="description" content="Explorează galeria noastră cu imagini de la instalările Master Security: camere video, sisteme de alarmă, interfoane smart și multe altele în Moldova." />
+  <meta name="keywords" content="galerie Master Security, instalare camere video Moldova, sisteme de securitate Chișinău, imagini securitate" />
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+
+  <meta name="google-site-verification" content="TDrLgFrm-KQHfIL8KzVKmje9ZDEsGauOAOmWvOAOg0s" />	
+  <meta property="og:locale" content="ro_MD" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Galerie - Master Security Moldova" />
+  <meta property="og:description" content="Vezi imagini cu soluțiile noastre de securitate: supraveghere video, sisteme anti incendiu, control acces și mai mult." />
+  <meta property="og:url" content="https://mastersecurity.md/gallery.html" />
+  <meta property="og:site_name" content="Master Security" />
+  <meta property="og:updated_time" content="2025-03-11T12:00:00+00:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Galerie - Master Security Moldova" />
+  <meta name="twitter:description" content="Descoperă galeria foto Master Security cu instalări de sisteme de securitate în Moldova." />
+
+  <!-- CSS neschimbat -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="font-flaticon/flaticon.css">
+  <link rel="stylesheet" href="css/dripicons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Viber, Whatsapp și Facebook design + Stilizare Galerie și Footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .social-icons { list-style-type: none; padding: 0; display: flex; justify-content: flex-start; }
+    .social-icons li { font-size: 24px; margin: 0 15px 0 0; }
+    .whatsapp i { color: #25D366 !important; }
+    .facebook i { color: #1877F2 !important; }
+    .viber i { color: #665CAC !important; }
+
+    /* Stilizare Galerie */
+    .gallery-section { padding: 80px 0; background: #f8f9fa; }
+    .gallery-container { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin: 0 15px; }
+    .gallery-section h1 { font-size: 36px; color: #2c3033; margin-bottom: 20px; text-align: center; }
+    .gallery-section p { font-size: 16px; line-height: 1.8; color: #666; margin-bottom: 30px; text-align: center; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .gallery-item { position: relative; overflow: hidden; border-radius: 8px; }
+    .gallery-item img { width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; }
+    .gallery-item:hover img { transform: scale(1.1); }
+    .gallery-item .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; }
+    .gallery-item:hover .overlay { opacity: 1; }
+    .gallery-item .overlay span { color: #fff; font-size: 18px; font-weight: 500; text-align: center; }
+    .gallery-btn { background: #ff4c4c; color: #fff; padding: 12px 25px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 30px; transition: background 0.3s; }
+    .gallery-btn:hover { background: #e04343; color: #fff; }
+
+    /* Stilizare Footer Complet */
+    .footer-extra { background: #2c3033; padding: 60px 0 40px; color: #fff; }
+    .footer-extra h3 { color: #fff; font-size: 20px; margin-bottom: 20px; }
+    .footer-extra p { color: #ccc; font-size: 16px; line-height: 1.6; }
+    .footer-extra ul { list-style: none; padding: 0; }
+    .footer-extra ul li { margin-bottom: 10px; color: #ccc; font-size: 16px; }
+    .footer-extra ul li a { color: #ccc; text-decoration: none; transition: color 0.3s; }
+    .footer-extra ul li a:hover { color: #ff4c4c; }
+    .footer-extra .btn-footer { background: #ff4c4c; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px; transition: background 0.3s; }
+    .footer-extra .btn-footer:hover { background: #e04343; }
+    .footer-bottom { border-top: 1px solid #444; padding-top: 20px; margin-top: 40px; text-align: center; }
+    .footer-bottom p { font-size: 14px; color: #999; margin: 0; }
+
+    /* Responsivitate */
+    @media (max-width: 767px) {
+      .gallery-container { padding: 20px; margin: 0 10px; }
+      .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      .gallery-item img { height: 150px; }
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Header neschimbat structural -->
+  <header class="header-area header-three">  
+    <div class="header-top second-header d-none d-md-block">
+      <div class="container">
+        <div class="row align-items-center">                                              
+          <div class="col-lg-6 col-md-8 d-none d-md-block">
+            <div class="header-cta">
+              <ul>
+                <li><em class="icon dripicons-mail"></em><span>Contact@mastersecurity.md</span></li>
+                <li><em class="icon far fa-phone"></em><span>+373 69070702</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 text-right d-none d-lg-block">
+            <div class="header-cta">
+              <ul>                                   
+                <li><i class="icon far fa-clock"></i><span>Luni - Sâmbătă 8:00 - 18:00</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 d-none d-md-block">
+            <a href="contact.html" class="top-btn">Cere Ofertă</a>
+          </div>
+        </div>
+      </div>
+    </div>		
+    <div id="header-sticky" class="menu-area">
+      <div class="container">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-3">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo.png" alt="Master Security Chișinău"></a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="main-menu text-right text-xl-right">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub"><a href="index.html">Acasă</a></li>
+                    <li class="has-sub"><a href="about.html">Despre companie</a></li>
+                    <li class="has-sub"><a href="servicii-menu.html">Servicii</a>
+                      <ul>
+                        <li><a href="servicii-supraveghere-video-in-moldova.html">Supraveghere video</a></li>
+                        <li><a href="servicii-sisteme-de-alarma-in-chisinau.html">Sisteme de alarmă</a></li>
+                        <li><a href="servicii-sisteme-anti-incendiu-in-chisinau.html">Sisteme anti incendiu</a></li>
+                        <li><a href="servicii-instalare-control-acces-in-chisinau.html">Control acces</a></li>
+                        <li><a href="servicii-intercom-smart-door-bell-instalare-in-chisinau.html">Interfon</a></li>
+                        <li><a href="servicii-instalare-avertizare-sonora-in-chisinau.html">Avertizare sonoră</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-sub"><a href="galerie.html">Produse</a></li>
+                    <li class="has-sub"><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>   
+            <div class="col-xl-3 col-lg-3 text-right d-none d-lg-block mt-15 mb-15">
+              <ul class="social-icons">
+                <li class="viber"><a href="viber://contact?number=%2B37369070702"><i class="fab fa-viber fa-xs" style="color: #665CAC;"></i></a></li>	
+                <li class="whatsapp"><a href="https://wa.me/+37369070702"><i class="fab fa-whatsapp fa-xs" style="color: #25D366;"></i></a></li>
+                <li class="facebook"><a href="#"><i class="fab fa-facebook fa-xs" style="color: #1877F2;"></i></a></li>
+              </ul>                             
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mobile-menu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+	
+	
+	
+	
+	
+	 <!-- Main Area -->
+    <main>
+        <!-- Search Popup -->
+        <div class="modal fade bs-example-modal-lg search-bg popup1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content search-popup">
+                    <div class="text-center">
+                        <a href="#" class="close2" data-dismiss="modal" aria-label="Close">× close</a>
+                    </div>
+                    <div class="row search-outer">
+                        <div class="col-md-11"><input type="text" placeholder="Search for products..." /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breadcrumb Area -->
+        <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/testimonial/test-bg.png)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="breadcrumb-wrap text-left">
+                            <div class="breadcrumb-title">
+                           
+								<h1 style="color: white;">Galerie Master Security</h1>
+
+                                <div class="breadcrumb-wrap">
+                                    <nav aria-label="breadcrumb">
+                                           <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="index.html">Acasă</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Galerie</li>
+                                        </ol>
+                                  </nav>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+	
+	
+	
+
+  <!-- Main Area -->
+  <main>
+    <!-- Gallery Section (lățime maximă) -->
+    <section class="gallery-section">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="gallery-container">
+<p>Descoperă soluțiile noastre de securitate în acțiune: instalări profesionale de camere video, sisteme de alarmă, interfoane smart și multe altele în Moldova.</p>
+              <div class="gallery-grid">
+                <a href="img/gallery/01.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/01.jpg" alt="Instalare cameră video Moldova">
+                  <div class="overlay"><span>Camere Video</span></div>
+                </a>
+                <a href="img/gallery/02.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/02.jpg" alt="Sistem de alarmă Chișinău">
+                  <div class="overlay"><span>Sistem de Alarmă</span></div>
+                </a>
+                <a href="img/gallery/03.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/03.jpg" alt="Sistem anti incendiu">
+                  <div class="overlay"><span>Anti Incendiu</span></div>
+                </a>
+                <a href="img/gallery/04.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/04.jpg" alt="Control acces Moldova">
+                  <div class="overlay"><span>Control Acces</span></div>
+                </a>
+                <a href="img/gallery/05.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/05.jpg" alt="Interfon smart">
+                  <div class="overlay"><span>Interfon Smart</span></div>
+                </a>
+                <a href="img/gallery/06.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/06.jpg" alt="Avertizare sonoră">
+                  <div class="overlay"><span>Avertizare Sonoră</span></div>
+                </a>
+                <a href="img/gallery/07.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/07.jpg" alt="Cameră video exterior">
+                  <div class="overlay"><span>Supraveghere Exterior</span></div>
+                </a>
+                <a href="img/gallery/08.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/08.jpg" alt="Instalare sistem securitate">
+                  <div class="overlay"><span>Instalare Completă</span></div>
+                </a>
+                <a href="img/gallery/09.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/09.jpg" alt="Senzori anti incendiu">
+                  <div class="overlay"><span>Senzori Incendiu</span></div>
+                </a>
+                <a href="img/gallery/10.jpg" class="gallery-item mfp-image">
+                  <img src="img/gallery/10.jpg" alt="Sistem smart home">
+                  <div class="overlay"><span>Smart Home</span></div>
+                </a>
+              </div>
+              <div class="text-center">
+                <a href="contact.html" class="gallery-btn">Cere o Ofertă</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (link ajustat la gallery.html) -->
+  <footer class="footer-extra">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Despre Master Security</h3>
+          <p>Suntem lideri în <strong>instalare camere video în Moldova</strong>, oferind soluții complete de securitate: supraveghere video, sisteme de alarmă, anti incendiu, control acces și interfoane smart. Cu peste 15 ani de experiență, protejăm case și afaceri cu tehnologie AI și garanție de până la 7 ani.</p>
+          <a href="about.html" class="btn-footer">Află mai multe</a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Serviciile Noastre</h3>
+          <ul>
+            <li><a href="servicii-supraveghere-video-in-moldova.html">Supraveghere Video</a></li>
+            <li><a href="servicii-sisteme-de-alarma-in-chisinau.html">Sisteme de Alarmă</a></li>
+            <li><a href="servicii-sisteme-anti-incendiu-in-chisinau.html">Sisteme Anti Incendiu</a></li>
+            <li><a href="servicii-instalare-control-acces-in-chisinau.html">Control Acces</a></li>
+            <li><a href="servicii-intercom-smart-door-bell-instalare-in-chisinau.html">Interfon Smart</a></li>
+            <li><a href="servicii-instalare-avertizare-sonora-in-chisinau.html">Avertizare Sonoră</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Linkuri Utile</h3>
+          <ul>
+            <li><a href="cookie-policy.html">Politica privind Cookie-urile</a></li>
+            <li><a href="privacy-policy.html">Politica de Confidențialitate</a></li>
+            <li><a href="faq.html">Întrebări Frecvente</a></li>
+            <li><a href="about.html">Despre Noi</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+			   <li><a href="gallery.html">Recenzii</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Contact</h3>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:Contact@mastersecurity.md">Contact@mastersecurity.md</a></li>
+            <li><strong>Telefon:</strong> +373 69070702</li>
+            <li><strong>Adresă:</strong>  Mun. Chișinău, Strada Cernișevschi 5, MD-2091, Moldova</li>
+            <li><strong>Program:</strong> Luni - Sâmbătă, 08:30 - 18:00</li>
+          </ul>
+          <ul class="social-icons">
+            <li class="viber"><a href="viber://contact?number=%2B37369070702"><i class="fab fa-viber"></i></a></li>
+            <li class="whatsapp"><a href="https://wa.me/+37369070702"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+            <p>© 2025 Master Security. Toate drepturile rezervate. Soluții de securitate de top în Moldova.</p><br>
+				<p>Pentru o mai bună vizibilitate online, acest site a beneficiat de servicii profesionale de 
+   <a href="https://backdevelopers.com" target="_blank" rel="dofollow noopener noreferrer" style="color: white;">
+      optimizare SEO
+   </a> oferite de BackDevelopers. Echipa lor de specialiști asigură optimizare on-page și off-page, creșterea autorității domeniului și strategii eficiente pentru îmbunătățirea poziționării în Google.
+</p>      </div>
+    </div>
+  </footer>
+
+  <!-- JS Files (inclusiv Magnific Popup pentru lightbox) -->
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.gallery-grid').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+          enabled: true
+        },
+        mainClass: 'mfp-with-zoom',
+        zoom: {
+          enabled: true,
+          duration: 300,
+          easing: 'ease-in-out'
+        }
+      });
+    });
+  </script>
+</body>
+</html>
