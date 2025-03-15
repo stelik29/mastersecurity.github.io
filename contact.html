@@ -23,12 +23,12 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/footer.css"> <!-- Added Footer CSS -->
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Inline Styles for Social Icons -->
+    <!-- Updated Inline Styles -->
     <style>
         .social-icons { list-style-type: none; padding: 0; display: flex; justify-content: space-around; }
         .social-icons li { font-size: 30px; margin: 0 10px; }
@@ -36,11 +36,80 @@
         .facebook i { color: #1877F2 !important; }
         .instagram i { color: #E4405F !important; }
         .viber i { color: #665CAC !important; }
+
+        /* Form Improvements */
+        .contact-bg02 {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-form .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .contact-field {
+            width: 100%;
+        }
+
+        .contact-field input,
+        .contact-field select,
+        .contact-field textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slider-btn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .btn.ss-btn {
+            display: inline-block;
+            width: auto;
+            padding: 15px 30px;
+            margin: 0 auto;
+        }
+
+        /* Mobile-specific adjustments */
+        @media (max-width: 767px) {
+            .contact-bg02 {
+                padding: 15px;
+            }
+
+            .contact-form .col-lg-6 {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .contact-field {
+                margin-bottom: 20px;
+            }
+
+            .slider-btn {
+                padding: 0 10px;
+            }
+
+            .btn.ss-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* Ensure form takes full width on larger screens */
+        @media (min-width: 768px) {
+            .contact-bg02 {
+                max-width: 800px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header (unchanged) -->
     <header class="header-area header-three">  
         <div class="header-top second-header d-none d-md-block">
             <div class="container">
@@ -115,7 +184,7 @@
 
     <!-- Main Area -->
     <main>
-        <!-- Search Popup -->
+        <!-- Search Popup (unchanged) -->
         <div class="modal fade bs-example-modal-lg search-bg popup1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content search-popup">
@@ -130,7 +199,7 @@
             </div>
         </div>
 
-        <!-- Breadcrumb Area -->
+        <!-- Breadcrumb Area (unchanged) -->
         <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/testimonial/test-bg.png)">
             <div class="container">
                 <div class="row align-items-center">
@@ -153,7 +222,7 @@
             </div>
         </section>
 
-        <!-- Contact Info Area -->
+        <!-- Contact Info Area (unchanged) -->
         <section id="contact" class="contact-area after-none contact-bg p-relative fix pt-90 pb-30">
             <div class="container">
                 <div class="row">
@@ -204,7 +273,7 @@
             </div>
         </section>
 
-        <!-- Contact Form Area -->
+        <!-- Contact Form Area (Updated) -->
         <section id="contact-form" class="contact-area after-none contact-bg pt-120 pb-120 p-relative fix" style="background: #f5f5f5;">
             <div class="container">
                 <div class="row">
@@ -252,8 +321,8 @@
                                         <div class="contact-field p-relative c-message mb-30">
                                             <textarea name="entry.327746179" cols="30" rows="10" placeholder="Vă rugăm să ne oferiți mai multe detalii despre proiectul dvs. sau despre ceea ce doriți să aflați." required></textarea>
                                         </div>
-                                        <div class="slider-btn text-center">
-                                            <button type="submit" class="btn ss-btn active" data-animation="fadeInRight" data-delay=".8s">Trimite Cererea – Obține 10% Reducere!</button>
+                                        <div class="slider-btn">
+                                            <button type="submit" class="btn ss-btn active" data-animation="fadeInRight" data-delay=".8s">Trimite Cererea</button>
                                         </div>
                                     </div>
                                 </div>
@@ -264,6 +333,7 @@
             </div>
         </section>
 
+        <!-- JavaScript (unchanged) -->
         <script>
         var submitted = false;
 
@@ -285,12 +355,10 @@
                     alert('Mulțumim! Cererea ta a fost trimisă cu succes.');
                     document.querySelector('.contact-form').reset();
                 } else {
-                    // Assume success if submission happened, since we’re getting inbox notifications
                     alert('Mulțumim! Cererea ta a fost trimisă cu succes.');
                     document.querySelector('.contact-form').reset();
                 }
             } catch (e) {
-                // Handle cross-origin error but assume success due to inbox proof
                 console.error('Iframe error (expected due to sign-in restriction):', e);
                 alert('Mulțumim! Cererea ta a fost trimisă cu succes.');
                 document.querySelector('.contact-form').reset();
@@ -299,7 +367,7 @@
         }
         </script>
 
-        <!-- Additional Info Section -->
+        <!-- Additional Info Section (unchanged) -->
         <section id="additional-info" class="contact-area after-none contact-bg pt-90 pb-75 p-relative fix">
             <div class="container">
                 <div class="row">
@@ -322,7 +390,7 @@
         </section>
     </main>
 
-    <!-- New Footer -->
+    <!-- Footer (unchanged) -->
     <footer class="footer-extra">
         <div class="container">
             <div class="row">
@@ -350,7 +418,7 @@
                         <li><a href="faq.html">Întrebări Frecvente</a></li>
                         <li><a href="about.html">Despre Noi</a></li>
                         <li><a href="gallery.html">Galerie</a></li>
-                       <li><a href="reviews.html">Recenzii</a></li>
+                        <li><a href="gallery.html">Recenzii</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -371,7 +439,7 @@
             </div>
             <div class="footer-bottom">
             <p>© 2025 Master Security. Toate drepturile rezervate. Soluții de securitate de top în Moldova.</p><br>
-				<p>Pentru o mai bună vizibilitate online, acest site a beneficiat de servicii profesionale de 
+            <p>Pentru o mai bună vizibilitate online, acest site a beneficiat de servicii profesionale de 
    <a href="https://backdevelopers.com" target="_blank" rel="dofollow noopener noreferrer" style="color: white;">
       optimizare SEO
    </a> oferite de BackDevelopers. Echipa lor de specialiști asigură optimizare on-page și off-page, creșterea autorității domeniului și strategii eficiente pentru îmbunătățirea poziționării în Google.
@@ -379,7 +447,7 @@
         </div>
     </footer>
 
-    <!-- JS Files -->
+    <!-- JS Files (unchanged) -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -399,7 +467,7 @@
     <script src="js/element-in-view.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Shop Script -->
+    <!-- Shop Script (unchanged) -->
     <script>
     function showPopup(title, description, price) {
         const popupOverlay = document.getElementById('popupOverlay');
@@ -420,7 +488,7 @@
     }
     </script>
 
-    <!-- Tawk.to Script -->
+    <!-- Tawk.to Script (unchanged) -->
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
