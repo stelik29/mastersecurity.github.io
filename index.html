@@ -56,7 +56,7 @@
   }
   </script>
 
-  <!-- CSS neschimbat -->
+  <!-- CSS Files -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
@@ -68,10 +68,12 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/footer.css"> <!-- Added Footer CSS -->
+  <link rel="stylesheet" href="css/footer.css">
 
-  <!-- Viber, Whatsapp și Facebook design + Stilizare Footer -->
+  <!-- Font Awesome for Social Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Inline Styles -->
   <style>
     .social-icons { list-style-type: none; padding: 0; display: flex; justify-content: space-around; }
     .social-icons li { font-size: 30px; margin: 0 10px; }
@@ -80,19 +82,22 @@
     .instagram i { color: #E4405F !important; }
     .viber i { color: #665CAC !important; }
 
-    /* Stilizare Footer Adițional */
-    .footer-extra { background: #2c3033; padding: 40px 0; color: #fff; }
-    .footer-extra h3 { color: #fff; font-size: 20px; margin-bottom: 20px; }
-    .footer-extra p { color: #ccc; font-size: 16px; line-height: 1.6; }
-    .footer-extra ul { list-style: none; padding: 0; }
-    .footer-extra ul li { margin-bottom: 10px; color: #ccc; }
-    .footer-extra .btn-footer { background: #ff4c4c; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px; }
-    .footer-extra .btn-footer:hover { background: #e04343; }
+    /* Center Send Button on Mobile */
+    @media (max-width: 767px) {
+      .slider-btn {
+        display: flex;
+        justify-content: center;
+      }
+      .btn.ss-btn {
+        width: auto;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <!-- Header (neschimbat structural) -->
+  <!-- Header -->
   <header class="header-area header-three">  
     <div class="header-top second-header d-none d-md-block">
       <div class="container">
@@ -165,9 +170,9 @@
     </div>
   </header>
 
-  <!-- Main Area (neschimbată, doar footer-ul este actualizat) -->
+  <!-- Main Area -->
   <main>
-     <!-- Slider Area -->
+    <!-- Slider Area -->
     <section id="home" class="slider-area slider-four fix p-relative">
       <div class="slider-active">
         <div class="single-slider slider-bg d-flex align-items-center">
@@ -181,8 +186,6 @@
                 <div class="slider-content s-slider-content">
                   <h2 data-animation="fadeInUp" data-delay=".4s">„Master Security”</h2>
                   <h1 data-animation="fadeInUp" data-delay=".4s" style="color: white;">Instalare Camere Video în Moldova</h1>
-					
-
                   <p data-animation="fadeInUp" data-delay=".6s">Camere video Chișinău la prețuri excelente, cu suport pentru diaspora și consultanță gratuită!</p>
                   <div class="slider-btn mt-30 mb-160">     
                     <a href="servicii-menu.html" class="btn ss-btn active mr-15">Vezi Oferta</a>
@@ -202,8 +205,7 @@
               <div class="col-lg-7 col-md-7">
                 <div class="slider-content s-slider-content">
                   <h1 data-animation="fadeInUp" data-delay=".4s">supraveghere video în Moldova</h1>
-           
-					<h2 data-animation="fadeInUp" data-delay=".4s" style="color: white;">Vînzări camere video în Chișinău</h2>
+                  <h2 data-animation="fadeInUp" data-delay=".4s" style="color: white;">Vînzări camere video în Chișinău</h2>
                   <div class="slider-btn mt-30 mb-160">                                          
                     <a href="contact.html" class="btn ss-btn active mr-15">Cere Ofertă</a>
                   </div>        
@@ -214,6 +216,7 @@
         </div>
       </div>
     </section>
+
     <!-- Features Area -->
     <section id="features-services" class="features-services-area about-p p-relative">
       <div class="container">
@@ -415,89 +418,66 @@
         </div>
       </div>
     </section>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	   <!-- Contact Form Area -->
-        <section id="contact-form" class="contact-area after-none contact-bg pt-120 pb-120 p-relative fix" style="background: #f5f5f5;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title center-align text-center mb-50">
-                            <h5><span class="line2"><img src="img/bg/circle_right.png" alt="circle_right"></span></h5>
-                            <h2>Cere o Ofertă Personalizată</h2>
-                            <p>Contactează <strong>Master Security Moldova</strong> pentru <strong>instalare camere video Moldova</strong>, sisteme de securitate sau interfoane smart. <strong>Beneficiază de 10% reducere</strong> dacă soliciți o ofertă prin formularul de pe site! Completează detaliile acum și te contactăm rapid cu cea mai bună soluție pentru tine!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="contact-bg02">
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="handleSubmissionResponse(this);"></iframe>
-                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSePBe_70tYXaJbuBe3HAJBT1ntD3STSD5ALVGVexj_wJAjeQw/formResponse" method="POST" class="contact-form mt-30" target="hidden_iframe" onsubmit="submitForm(event);">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-name mb-30">
-                                            <input type="text" name="entry.1393095373" placeholder="Nume" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-email mb-20">
-                                            <input type="email" name="entry.670271287" placeholder="Email" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-subject mb-30">
-                                            <input type="tel" name="entry.1586007690" placeholder="Telefon" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-subject mb-30">
-                                            <select name="entry.338903699" required>
-                                                <option value="" disabled selected>Alege un serviciu</option>
-                                                <option value="Supraveghere video">Supraveghere video</option>
-                                                <option value="Sisteme de alarmă">Sisteme de alarmă</option>
-                                                <option value="Sisteme anti incendiu">Sisteme anti incendiu</option>
-                                                <option value="Control acces">Control acces</option>
-                                                <option value="Interfon">Interfon</option>
-                                                <option value="Avertizare sonoră">Avertizare sonoră</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="contact-field p-relative c-message mb-30">
-                                            <textarea name="entry.327746179" cols="30" rows="10" placeholder="Vă rugăm să ne oferiți mai multe detalii despre proiectul dvs. sau despre ceea ce doriți să aflați." required></textarea>
-                                        </div>
-                                        <div class="slider-btn text-center">
-                                            <button type="submit" class="btn ss-btn active" data-animation="fadeInRight" data-delay=".8s">Trimite Cererea – Obține 10% Reducere!</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+    <!-- Contact Form Area (Updated with Working Form from contact.html) -->
+    <section id="contact-form" class="contact-area after-none contact-bg pt-120 pb-120 p-relative fix" style="background: #f5f5f5;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title center-align text-center mb-50">
+              <h5><span class="line2"><img src="img/bg/circle_right.png" alt="circle_right"></span></h5>
+              <h2>Cere o Ofertă Personalizată</h2>
+              <p>Contactează <strong>Master Security Moldova</strong> pentru <strong>instalare camere video Moldova</strong>, sisteme de securitate sau interfoane smart. <strong>Beneficiază de 10% reducere</strong> dacă soliciți o ofertă prin formularul de pe site! Completează detaliile acum și te contactăm rapid cu cea mai bună soluție pentru tine!</p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="contact-bg02">
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="handleSubmissionResponse(this);"></iframe>
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSePBe_70tYXaJbuBe3HAJBT1ntD3STSD5ALVGVexj_wJAjeQw/formResponse" method="POST" class="contact-form mt-30" target="hidden_iframe" onsubmit="submitForm(event);">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="contact-field p-relative c-name mb-30">
+                      <input type="text" name="entry.1393095373" placeholder="Nume" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="contact-field p-relative c-email mb-20">
+                      <input type="email" name="entry.670271287" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="contact-field p-relative c-subject mb-30">
+                      <input type="tel" name="entry.1586007690" placeholder="Telefon" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="contact-field p-relative c-subject mb-30">
+                      <select name="entry.338903699" required>
+                        <option value="" disabled selected>Alege un serviciu</option>
+                        <option value="Supraveghere video">Supraveghere video</option>
+                        <option value="Sisteme de alarmă">Sisteme de alarmă</option>
+                        <option value="Sisteme anti incendiu">Sisteme anti incendiu</option>
+                        <option value="Control acces">Control acces</option>
+                        <option value="Interfon">Interfon</option>
+                        <option value="Avertizare sonoră">Avertizare sonoră</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="contact-field p-relative c-message mb-30">
+                      <textarea name="entry.327746179" cols="30" rows="10" placeholder="Vă rugăm să ne oferiți mai multe detalii despre proiectul dvs. sau despre ceea ce doriți să aflați." required></textarea>
+                    </div>
+                    <div class="slider-btn text-center">
+                      <button type="submit" class="btn ss-btn active" data-animation="fadeInRight" data-delay=".8s">Trimite Cererea – Obține 10% Reducere!</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonial Area -->
     <section class="testimonial-area pt-120 pb-105" style="background-image: url(img/bg/service-bg.png);background-color: #222629;">
@@ -550,165 +530,197 @@
               <h5><span class="line2"><img src="img/bg/circle_right.png" alt="circle_right"></span></h5> 
               <h2 style="color: #ffffff;">Protejează-ți Casa sau Afacerea Acum!</h2>
               <p style="color: #ffffff;">Află <strong>camere de supraveghere video preț Moldova</strong> şi securizează totul cu Master Security. Sună-ne pentru o ofertă personalizată!</p>
-              <a href="contact.html" class="btn ss-btn active">Sună-ne la +373 69070702</a>
+              <a href="tel:37369070702" class="btn ss-btn active">Sună-ne la +373 69070702</a>
             </div>
           </div>
-        </</div>
+        </div>
       </div>
     </section>
   </main>
 
- 
-	 <!-- Footer Extra Section (Nou) -->
-    <div class="footer-extra">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-30">
-            <h3>De Ce Să Alegi Master Security?</h3>
-            <p>La Master Security, oferim soluții complete de securitate: <strong>instalare camere video în Moldova</strong>, sisteme de alarmă, anti incendiu și interfoane smart. Tehnologie AI, prețuri accesibile și garanție până la 7 ani!</p>
-            <a href="contact.html" class="btn-footer">Cere Ofertă Gratuită</a>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-30">
-            <h3>Camere Video Chișinău – Securitate Accesibilă</h3>
-            <p>Specializăm în <strong>camere video Chișinău</strong> la preț competitiv, cu instalare rapidă și tehnologie de ultimă generație. Monitorizează-ți proprietatea de oriunde, cu acces facil prin aplicații mobile.</p>
-            <a href="servicii-supraveghere-video-in-moldova.html" class="btn-footer">Află Prețul</a>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-30">
-            <h3>Camere de Supraveghere Preț Moldova</h3>
-            <p>Îți oferim <strong>camere de supraveghere video preț Moldova</strong> imbatabil, cu garanție 7 ani. Instalare profesională în Chișinău și oriunde în țară, inclusiv suport pentru diaspora.</p>
-            <a href="servicii-supraveghere-video-in-moldova.html" class="btn-footer">Detalii</a>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-30">
-            <h3>Sisteme de Alarmă Moderne</h3>
-            <p>Protecție 24/7 cu <strong>sisteme de alarmă</strong> integrate cu camere video Chișinău. Senzori de mișcare, alertă pe mobil – siguranță garantată la prețuri accesibile.</p>
-            <a href="servicii-sisteme-de-alarma-in-chisinau.html" class="btn-footer">Vezi Oferta</a>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-30">
-            <h3>Sisteme Anti Incendiu Fiabile</h3>
-            <p>Siguranta ta e prioritatea noastră cu <strong>sisteme anti incendiu</strong>: senzori avansați și stingere automată. Perfecte alături de camere video Moldova.</p>
-            <a href="servicii-sisteme-anti-incendiu-in-chisinau.html" class="btn-footer">Contactează-ne</a>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-30">
-            <h3>Interfoane Smart pentru Control</h3>
-            <p>Controlează-ți ușa de oriunde cu <strong>interfoane smart</strong>. Ideal pentru diaspora, integrat cu instalare camere video în Moldova.</p>
-            <a href="servicii-intercom-smart-door-bell-instalare-in-chisinau.html" class="btn-footer">Află Mai Mult</a>
-          </div>
+  <!-- Footer Extra Section -->
+  <div class="footer-extra">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-30">
+          <h3>De Ce Să Alegi Master Security?</h3>
+          <p>La Master Security, oferim soluții complete de securitate: <strong>instalare camere video în Moldova</strong>, sisteme de alarmă, anti incendiu și interfoane smart. Tehnologie AI, prețuri accesibile și garanție până la 7 ani!</p>
+          <a href="contact.html" class="btn-footer">Cere Ofertă Gratuită</a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-30">
+          <h3>Camere Video Chișinău – Securitate Accesibilă</h3>
+          <p>Specializăm în <strong>camere video Chișinău</strong> la preț competitiv, cu instalare rapidă și tehnologie de ultimă generație. Monitorizează-ți proprietatea de oriunde, cu acces facil prin aplicații mobile.</p>
+          <a href="servicii-supraveghere-video-in-moldova.html" class="btn-footer">Află Prețul</a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-30">
+          <h3>Camere de Supraveghere Preț Moldova</h3>
+          <p>Îți oferim <strong>camere de supraveghere video preț Moldova</strong> imbatabil, cu garanție 7 ani. Instalare profesională în Chișinău și oriunde în țară, inclusiv suport pentru diaspora.</p>
+          <a href="servicii-supraveghere-video-in-moldova.html" class="btn-footer">Detalii</a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-30">
+          <h3>Sisteme de Alarmă Moderne</h3>
+          <p>Protecție 24/7 cu <strong>sisteme de alarmă</strong> integrate cu camere video Chișinău. Senzori de mișcare, alertă pe mobil – siguranță garantată la prețuri accesibile.</p>
+          <a href="servicii-sisteme-de-alarma-in-chisinau.html" class="btn-footer">Vezi Oferta</a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-30">
+          <h3>Sisteme Anti Incendiu Fiabile</h3>
+          <p>Siguranta ta e prioritatea noastră cu <strong>sisteme anti incendiu</strong>: senzori avansați și stingere automată. Perfecte alături de camere video Moldova.</p>
+          <a href="servicii-sisteme-anti-incendiu-in-chisinau.html" class="btn-footer">Contactează-ne</a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-30">
+          <h3>Interfoane Smart pentru Control</h3>
+          <p>Controlează-ți ușa de oriunde cu <strong>interfoane smart</strong>. Ideal pentru diaspora, integrat cu instalare camere video în Moldova.</p>
+          <a href="servicii-intercom-smart-door-bell-instalare-in-chisinau.html" class="btn-footer">Află Mai Mult</a>
         </div>
       </div>
     </div>
-	
-	
-	
-	
-    <!-- New Footer -->
-    <footer class="footer-extra">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-30">
-                    <h3>Despre Master Security</h3>
-                    <p>Suntem lideri în <strong>instalare camere video în Moldova</strong>, oferind soluții complete de securitate: supraveghere video, sisteme de alarmă, anti incendiu, control acces și interfoane smart. Cu peste 15 ani de experiență, protejăm case și afaceri cu tehnologie AI și garanție de până la 7 ani.</p>
-                    <a href="about.html" class="btn-footer">Află mai multe</a>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-30">
-                    <h3>Serviciile Noastre</h3>
-                    <ul>
-                        <li><a href="servicii-supraveghere-video-in-moldova.html">Supraveghere Video</a></li>
-                        <li><a href="servicii-sisteme-de-alarma-in-chisinau.html">Sisteme de Alarmă</a></li>
-                        <li><a href="servicii-sisteme-anti-incendiu-in-chisinau.html">Sisteme Anti Incendiu</a></li>
-                        <li><a href="servicii-instalare-control-acces-in-chisinau.html">Control Acces</a></li>
-                        <li><a href="servicii-intercom-smart-door-bell-instalare-in-chisinau.html">Interfon Smart</a></li>
-                        <li><a href="servicii-instalare-avertizare-sonora-in-chisinau.html">Avertizare Sonoră</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-30">
-                    <h3>Linkuri Utile</h3>
-                    <ul>
-                        <li><a href="cookie-policy.html">Politica privind Cookie-urile</a></li>
-                        <li><a href="privacy-policy.html">Politica de Confidențialitate</a></li>
-                        <li><a href="faq.html">Întrebări Frecvente</a></li>
-                        <li><a href="about.html">Despre Noi</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                         <li><a href="reviews.html">Recenzii</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-30">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><strong>Email:</strong> <a href="mailto:Contact@mastersecurity.md">Contact@mastersecurity.md</a></li>
-                        <li><strong>Telefon:</strong> +373 69070702</li>
-                        <li><strong>Adresă:</strong> Mun. Chișinău, Strada Cernișevschi 5, MD-2091, Moldova</li>
-                        <li><strong>Program:</strong> Luni - Sâmbătă, 08:30 - 18:00</li>
-                    </ul>
-                    <ul class="social-icons">
-                        <li class="viber"><a href="viber://contact?number=%2B37369070702"><i class="fab fa-viber"></i></a></li>
-                        <li class="whatsapp"><a href="https://wa.me/+37369070702"><i class="fab fa-whatsapp"></i></a></li>
-                        <li class="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-            <p>© 2025 Master Security. Toate drepturile rezervate. Soluții de securitate de top în Moldova.</p><br>
-				<p>Pentru o mai bună vizibilitate online, acest site a beneficiat de servicii profesionale de 
-   <a href="https://backdevelopers.com" target="_blank" rel="dofollow noopener noreferrer" style="color: white;">
-      optimizare SEO
-   </a> oferite de BackDevelopers. Echipa lor de specialiști asigură optimizare on-page și off-page, creșterea autorității domeniului și strategii eficiente pentru îmbunătățirea poziționării în Google.
-</p>            </div>
+  </div>
+
+  <!-- New Footer -->
+  <footer class="footer-extra">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Despre Master Security</h3>
+          <p>Suntem lideri în <strong>instalare camere video în Moldova</strong>, oferind soluții complete de securitate: supraveghere video, sisteme de alarmă, anti incendiu, control acces și interfoane smart. Cu peste 15 ani de experiență, protejăm case și afaceri cu tehnologie AI și garanție de până la 7 ani.</p>
+          <a href="about.html" class="btn-footer">Află mai multe</a>
         </div>
-    </footer>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Serviciile Noastre</h3>
+          <ul>
+            <li><a href="servicii-supraveghere-video-in-moldova.html">Supraveghere Video</a></li>
+            <li><a href="servicii-sisteme-de-alarma-in-chisinau.html">Sisteme de Alarmă</a></li>
+            <li><a href="servicii-sisteme-anti-incendiu-in-chisinau.html">Sisteme Anti Incendiu</a></li>
+            <li><a href="servicii-instalare-control-acces-in-chisinau.html">Control Acces</a></li>
+            <li><a href="servicii-intercom-smart-door-bell-instalare-in-chisinau.html">Interfon Smart</a></li>
+            <li><a href="servicii-instalare-avertizare-sonora-in-chisinau.html">Avertizare Sonoră</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Linkuri Utile</h3>
+          <ul>
+            <li><a href="cookie-policy.html">Politica privind Cookie-urile</a></li>
+            <li><a href="privacy-policy.html">Politica de Confidențialitate</a></li>
+            <li><a href="faq.html">Întrebări Frecvente</a></li>
+            <li><a href="about.html">Despre Noi</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="reviews.html">Recenzii</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-30">
+          <h3>Contact</h3>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:Contact@mastersecurity.md">Contact@mastersecurity.md</a></li>
+            <li><strong>Telefon:</strong> +373 69070702</li>
+            <li><strong>Adresă:</strong> Mun. Chișinău, Strada Cernișevschi 5, MD-2091, Moldova</li>
+            <li><strong>Program:</strong> Luni - Sâmbătă, 08:30 - 18:00</li>
+          </ul>
+          <ul class="social-icons">
+            <li class="viber"><a href="viber://contact?number=%2B37369070702"><i class="fab fa-viber"></i></a></li>
+            <li class="whatsapp"><a href="https://wa.me/+37369070702"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Master Security. Toate drepturile rezervate. Soluții de securitate de top în Moldova.</p><br>
+        <p>Pentru o mai bună vizibilitate online, acest site a beneficiat de servicii profesionale de 
+          <a href="https://backdevelopers.com" target="_blank" rel="dofollow noopener noreferrer" style="color: white;">optimizare SEO</a> 
+          oferite de BackDevelopers. Echipa lor de specialiști asigură optimizare on-page și off-page, creșterea autorității domeniului și strategii eficiente pentru îmbunătățirea poziționării în Google.
+        </p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- JS Files -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/paroller.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/js_isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.meanmenu.min.js"></script>
-    <script src="js/parallax-scroll.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/element-in-view.js"></script>
-    <script src="js/main.js"></script>
+  <!-- JS Files -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/main.js"></script>
 
-    <!-- Shop Script -->
-    <script>
+  <!-- Shop Script (Unused but Kept) -->
+  <script>
     function showPopup(title, description, price) {
-        const popupOverlay = document.getElementById('popupOverlay');
-        const popupContent = document.getElementById('popupContent');
-        const popupTitle = document.getElementById('popupTitle');
-        const popupDescription = document.getElementById('popupDescription');
-        const popupPrice = document.getElementById('popupPrice');
-        const popupImage = document.getElementById('popupImage');
-        popupTitle.textContent = title;
-        popupDescription.textContent = description;
-        popupPrice.textContent = price;
-        popupImage.src = `product_images/${title.toLowerCase().replace(/\s+/g, '-')}.jpg`;
-        popupOverlay.style.display = 'flex';
+      const popupOverlay = document.getElementById('popupOverlay');
+      const popupContent = document.getElementById('popupContent');
+      const popupTitle = document.getElementById('popupTitle');
+      const popupDescription = document.getElementById('popupDescription');
+      const popupPrice = document.getElementById('popupPrice');
+      const popupImage = document.getElementById('popupImage');
+      popupTitle.textContent = title;
+      popupDescription.textContent = description;
+      popupPrice.textContent = price;
+      popupImage.src = `product_images/${title.toLowerCase().replace(/\s+/g, '-')}.jpg`;
+      popupOverlay.style.display = 'flex';
     }
     function closePopup() {
-        const popupOverlay = document.getElementById('popupOverlay');
-        popupOverlay.style.display = 'none';
+      const popupOverlay = document.getElementById('popupOverlay');
+      popupOverlay.style.display = 'none';
     }
-    </script>
+  </script>
 
-    <!-- Tawk.to Script -->
-    <script type="text/javascript">
+  <!-- Contact Form Script (From contact.html) -->
+  <script>
+    var submitted = false;
+
+    function submitForm(event) {
+      event.preventDefault();
+      console.log('Button clicked, submitting form...');
+      submitted = true;
+      document.querySelector('.contact-form').submit();
+    }
+
+    function handleSubmissionResponse(iframe) {
+      if (!submitted) return;
+      console.log('Iframe loaded, processing response...');
+      try {
+        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var responseText = iframeDoc.body.innerHTML;
+        console.log('Iframe content:', responseText);
+        if (responseText && responseText.includes('Your response has been recorded')) {
+          alert('Mulțumim! Cererea ta a fost trimisă cu succes.');
+          document.querySelector('.contact-form').reset();
+        } else {
+          // Assume success if submission happened, since we’re getting inbox notifications
+          alert('Mulțumim! Cererea ta a fost trimisă cu succes.');
+          document.querySelector('.contact-form').reset();
+        }
+      } catch (e) {
+        // Handle cross-origin error but assume success due to inbox proof
+        console.error('Iframe error (expected due to sign-in restriction):', e);
+        alert('Mulțumim! Cererea ta a fost trimisă cu succes.');
+        document.querySelector('.contact-form').reset();
+      }
+      submitted = false;
+    }
+  </script>
+
+  <!-- Tawk.to Script -->
+  <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6125244dd6e7610a49b1c9a0/1fdshbk9n';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/6125244dd6e7610a49b1c9a0/1fdshbk9n';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
+  </script>
 </body>
 </html>
