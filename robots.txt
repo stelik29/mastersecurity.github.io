@@ -1,13 +1,98 @@
+# robots.txt for https://mastersecurity.md/
 
+# Allow all robots complete access to the site
+User-agent: *
+Disallow: 
 
+# Sitemap location to help search engines and AI bots find your site map for better indexing
 Sitemap: https://mastersecurity.md/sitemap.xml
 
+# Allow Googlebot (Google Search Engine)
+User-agent: Googlebot
+Disallow: 
 
-User-agent: NerdyBot
-allow: /index.html
+# Allow Bingbot (Bing Search Engine)
+User-agent: Bingbot
+Disallow: 
 
-User-agent: *
-Disallow: /css/
-Disallow: /js/
-Disallow: /fonts/
-Disallow: /fontawesome/
+# Allow Yahoo Slurp (Yahoo Search Engine)
+User-agent: Slurp
+Disallow: 
+
+# Allow DuckDuckBot (DuckDuckGo Search Engine)
+User-agent: DuckDuckBot
+Disallow: 
+
+# Allow Baiduspider (Baidu Search Engine)
+User-agent: Baiduspider
+Disallow: 
+
+# Allow YandexBot (Yandex Search Engine)
+User-agent: YandexBot
+Disallow: 
+
+# Allow Sogou Spider (Sogou Search Engine)
+User-agent: Sogou Spider
+Disallow: 
+
+# Allow Googlebot-Image (Google Images)
+User-agent: Googlebot-Image
+Disallow: 
+
+# Allow Googlebot-News (Google News)
+User-agent: Googlebot-News
+Disallow:
+
+# Allow specific AI bots:
+User-agent: BingPreview       # Bing AI preview bot
+Disallow: 
+
+User-agent: Facebot           # Facebook AI bot for content aggregation
+Disallow:
+
+User-agent: Twitterbot        # Twitter AI bot for content indexing
+Disallow:
+
+User-agent: Pinterestbot      # Pinterest AI bot for indexing pins
+Disallow:
+
+User-agent: FacebookExternalHit # Facebook external hits (like sharing links)
+Disallow: 
+
+User-agent: WhatsApp          # WhatsApp indexing bot (for link previews)
+Disallow:
+
+User-agent: Slackbot          # Slackbot for content previews in Slack
+Disallow:
+
+User-agent: LinkedInBot       # LinkedIn AI bot for link preview indexing
+Disallow:
+
+# Allow GPTbot (OpenAI’s GPT AI bot for scraping and training data)
+User-agent: GPTbot
+Disallow:  # No disallow, meaning allow GPTbot to crawl everything
+
+# Allow AlgoliaBot (Algolia search AI bot)
+User-agent: AlgoliaBot
+Disallow: 
+
+# Allow BaiduSpider (Baidu AI for content scraping and indexing in China)
+User-agent: BaiduSpider
+Disallow:
+
+# Avoid crawling sensitive files (example: personal information, admin pages, etc.)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /login/
+Disallow: /register/
+
+# Specific crawling directives for JavaScript, CSS, and image files to avoid blocking important assets
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block bots from crawling or scraping files in certain directories
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+# End of file
