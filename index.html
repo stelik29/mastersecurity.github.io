@@ -120,14 +120,13 @@
 </head>
 
 
-	<style>
-  .products-carousel .slick-dots,
-  .products-carousel .slick-prev,
-  .products-carousel .slick-next {
-    display: none !important;
-  }
-  .products-carousel .slick-slide {
-    padding: 0 15px;
+<style>
+  .products-carousel .slick-slide { padding: 0 12px; }
+  .products-carousel img:hover { transform: scale(1.05); transition: .3s; }
+  @media (max-width: 576px) {
+    .products-carousel img { height: 200px !important; }
+    .products-carousel h4 { font-size: 1.1rem; }
+    .products-carousel .text-danger { font-size: 1.3rem !important; }
   }
 </style>
 	
@@ -338,7 +337,8 @@
     <!-- NEW: Product Carousel – placed at the bottom -->
     <!-- ============================================= -->
    <!-- ============================================= -->
-<!-- Product Carousel – Horizontal & Clean       -->
+<!-- ============================================= -->
+<!-- FINAL: Carousel with Your Real Products + Prices -->
 <!-- ============================================= -->
 <section class="pt-120 pb-120" style="background:#f8f9fa;">
   <div class="container">
@@ -349,59 +349,59 @@
 
     <div class="products-carousel">
       <!-- Product 1 -->
-      <div class="text-center px-3">
-        <img src="images/montare-camere-video-orhei.webp" alt="montare camere video orhei" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DH-IPC-P5D-5F-PV</h4>
-        <p class="text-muted small mb-3">Preț: 2.199 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/montare-camere-video-orhei.webp" alt="Camera Dahua DH-IPC-P5D-5F-PV" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DH-IPC-P5D-5F-PV</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 2.199 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
       <!-- Product 2 -->
-      <div class="text-center px-3">
-        <img src="images/vinzare-si-montare-camere-moldova.webp" alt="vinzare camere video moldova" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DH-IPC-HDPW1230R1P</h4>
-        <p class="text-muted small mb-3">Preț: 1.500 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/vinzare-si-montare-camere-moldova.webp" alt="Camera Dahua DH-IPC-HDPW1230R1P" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DH-IPC-HDPW1230R1P</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 1.500 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
       <!-- Product 3 -->
-      <div class="text-center px-3">
-        <img src="images/motare-camere-video-moldova.webp" alt="Montare camere video Moldova" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DH-H5B</h4>
-        <p class="text-muted small mb-3">Preț: 866 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/motare-camere-video-moldova.webp" alt="Camera Dahua DH-H5B" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DH-H5B</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 866 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
       <!-- Product 4 -->
-      <div class="text-center px-3">
-        <img src="images/instalare-video-camere-moldova.webp" alt="Instalare camere video Moldova" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DH-IPC-HDW1431T1</h4>
-        <p class="text-muted small mb-3">Preț: 1.000 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/instalare-video-camere-moldova.webp" alt="Camera Dahua DH-IPC-HDW1431T1" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DH-IPC-HDW1431T1</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 1.000 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
       <!-- Product 5 -->
-      <div class="text-center px-3">
-        <img src="images/cumpara-camere-video-ieftin.webp" alt="Cumpara camere video ieftin" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DH-IPC-PTS2249B</h4>
-        <p class="text-muted small mb-3">Preț: 2.777 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/cumpara-camere-video-ieftin.webp" alt="Camera Dahua PTZ DH-IPC-PTS2249B" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DH-IPC-PTS2249B</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 2.777 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
       <!-- Product 6 -->
-      <div class="text-center px-3">
-        <img src="images/instalare-video-camere.webp" alt="Instalare video camere" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DH-P5AE-PV</h4>
-        <p class="text-muted small mb-3">Preț: 1.999 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/instalare-video-camere.webp" alt="Camera Dahua DH-P5AE-PV" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DH-P5AE-PV</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 1.999 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
       <!-- Product 7 -->
-      <div class="text-center px-3">
-        <img src="images/vinzari-camere-video-chisinau.webp" alt="Vinzari camere video Chisinau" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DH-XVR1B08H-I</h4>
-        <p class="text-muted small mb-3">Preț: 2.730 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/vinzari-camere-video-chisinau.webp" alt="DVR Dahua DH-XVR1B08H-I" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DH-XVR1B08H-I</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 2.730 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
       <!-- Product 8 -->
-      <div class="text-center px-3">
-        <img src="images/instalare-interfon-moldova.webp" alt="Instalare interfon Moldova" class="img-fluid rounded" style="height:230px; object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
-        <h4 class="mt-3 mb-2">DHI-VTO1301R-W</h4>
-        <p class="text-muted small mb-3">Preț: 2.299 MDL</p>
+      <div class="text-center px-3 px-md-4">
+        <img src="images/instalare-interfon-moldova.webp" alt="Videointerfon Dahua DHI-VTO1301R-W" class="img-fluid rounded shadow-lg mx-auto d-block" style="height:240px; object-fit:cover;">
+        <h4 class="mt-4 mb-2 fw-bold">DHI-VTO1301R-W</h4>
+        <p class="text-danger fs-5 fw-bold mb-3">Preț: 2.299 MDL</p>
         <a href="galerie.html" class="btn ss-btn active">Vezi Detalii</a>
       </div>
     </div>
@@ -840,29 +840,27 @@
 	
 	
 	
-	
 <script>
   $(document).ready(function(){
     $('.products-carousel').slick({
-      dots: false,          // ← completely removed
-      arrows: false,        // ← completely removed
+      dots: false,
+      arrows: false,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 5000,  // every 5 seconds
-      speed: 800,
-      slidesToShow: 4,
+      autoplaySpeed: 5000,
+      speed: 900,
+      slidesToShow: 5,
       slidesToScroll: 1,
-      rows: 1,
-      slidesPerRow: 1,
       responsive: [
+        { breakpoint: 1400, settings: { slidesToShow: 4 } },
         { breakpoint: 1200, settings: { slidesToShow: 3 } },
-        { breakpoint: 992,  settings: { slidesToShow: 2 } },
+        { breakpoint: 992,  settings: { slidesToShow: 3 } },
+        { breakpoint: 768,  settings: { slidesToShow: 2 } },
         { breakpoint: 576,  settings: { slidesToShow: 1 } }
       ]
     });
   });
 </script>
-	
 	
 	
 	
