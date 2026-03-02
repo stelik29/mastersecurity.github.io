@@ -14,7 +14,7 @@
           "value": "mastersecurity.md"
         }
       ],
-      "destination": "https://www.mastersecurity.md/:path*",
+      "destination": "https://mastersecurity.md/:path*",
       "permanent": true
     }
   ]
